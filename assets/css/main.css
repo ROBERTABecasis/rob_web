@@ -2750,7 +2750,7 @@ line-height: 90px;
 				
 			}
 
-				body:not(.is-touch) .tiles article:hover > .image:before {
+				body:not(.no-touch) .tiles article:hover > .image:before {
 					background-color: #a677e8;
 					opacity: 1;
 				}
@@ -2779,10 +2779,14 @@ line-height: 90px;
 			opacity: 0;
 		}
 
-		body.is-touch .tiles article .content {
-			max-height: 15em;
+		
+body.is-touch .tiles article .content:hover {
+			
 			opacity: 1;
+            transform: translateY(20px);
+  -webkit-transform: translateY(10px);
 		}
+
 
 		@media screen and (max-width: 1280px) {
 
